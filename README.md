@@ -9,10 +9,12 @@ The format of these arrays is described in the comments in .bfont files.
 
 The plugins have been tested on Windows and Linux with GIMP 2.10.22, which is the latest stable version of GIMP as of this writing.
 
+For an example of how to use the generated C arrays (in .bfont files), check out ``bfont_user_example`` folder.
+
 ### Installation
 
  - Copy **gimp_bfont_render.py** and **gimp_bfont_export.py** to your Gimp plugins folder. To find out its location, run Gimp and go to ``Edit > Preferences > Folders > Plug-ins`` (but pay attention to the peculiarities mentioned below);
- 
+
  - (Skip if you're using Windows) Change file permissions by adding executable bit: ``chmod +x gimp_bfont_render.py``, ``chmod +x gimp_bfont_export.py``
 
  - Restart Gimp.
