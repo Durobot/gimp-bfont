@@ -1,4 +1,6 @@
-This is an example of using .bfont bitmapped font files (just plain C arrays in a self-documented text files really).
+This is an example of using .bfont bitmapped font files (just plain C arrays in a self-documented text files really):
+
+![bfont_user_01](img/bfont_user_01.png)
 
 Dependencies: [SDL2](https://www.libsdl.org/download-2.0.php)
 
