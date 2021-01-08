@@ -1,3 +1,31 @@
+/*
+ * This is an example of how to render .bfont bitmap fonts.
+ * The font data is in bfont_user_fonts.c, which is licensed differently.
+ * Licensing terms for bfont_user.c follow below:
+ *
+ * MIT License
+ *
+ * Copyright (c) 2021 Alexei Kireev
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
 //#include <stdio.h>   // printf()
 #include <stdlib.h>  // free()
 #include <stdint.h>  // uint8_t, uint16_t, uint32_t
@@ -147,7 +175,7 @@ int main(int argc, char* args[])
 	g_colorMouseClick.r = 64;
 	g_colorMouseClick.g = 144;
 	g_colorMouseClick.b = 255;
-    
+
 	// Get font heights from their byte arrays
 	g_smallerFontHeight = *((uint16_t*)(g_pfontSmaller + 1));
 	g_largerFontHeight = *((uint16_t*)(g_pfontLarger + 1));
@@ -162,7 +190,7 @@ int main(int argc, char* args[])
 	bool quit = false;
 	bool leftMouseButtonDown = false;
 	while(!quit)
-	{        
+	{
 		//SDL_UpdateTexture(pTexture, NULL, g_pPixBuf, SCREEN_WIDTH * sizeof(uint32_t));
 		SDL_UpdateTexture(pTexture, NULL, g_pPixBuf, SCREEN_WIDTH * sizeof(struct PixelCol));
 		//SDL_UpdateTexture(pTexture, NULL, g_pPixBuf, SCREEN_WIDTH * sizeof(uint8_t) * 3);
