@@ -1,6 +1,6 @@
 This is an example of using .bfont bitmapped font files (just plain C arrays in a self-documented text files really):
 
-<img src="img/bfont_user_01.png" alt="bfont_user_01" height="240" width="320" />
+<img src="img/bfont_user_01.png" alt="bfont_user_01" style="zoom:67%;" />
 
 Dependencies: [SDL2](https://www.libsdl.org/download-2.0.php)
 
